@@ -28,6 +28,11 @@ type Plane struct{
 	Carrying_capacity int
 }
 
+//override  Move () for plane 
+func (p Plane) Move(){
+	fmt.Println(p.Brand, "is Flying at", p.Speed, "mph with a a carrying_capacity of", p.Carrying_capacity,"passengers!")
+}
+
 func main(){
 	car      := Car{Motor: Motor{Brand: "Bugatti cheyron", Speed: 360}, Transmission:"Automatic"}
 	scooter := Scooter{Motor: Motor{Brand:"Honda", Speed: 180}, Gears: 6}
